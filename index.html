@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15Five | Strategic HR & Continuous Performance Management Platform</title>
+  <meta name="description" content="15Five combines continuous performance reviews, 1-on-1 meeting agendas, employee engagement surveys, OKRs, and manager coaching to drive measurable business results.">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  
+  <!-- Design System Fonts: DM Serif Display & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Variables & Master Styles -->
+  <link rel="stylesheet" href="./CSS Variables.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="15Five Home">
+        <!-- Ember Orange Asterisk Burst Icon -->
+        <svg class="brand-burst" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+          <line x1="12" y1="2" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+        </svg>
+        <span>15five</span>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="#demo-console" class="nav-link">
+              Platform
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#demo-console" class="dropdown-item">
+                <div class="dropdown-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                  <div class="dropdown-title">Continuous 1-on-1s</div>
+                  <div class="dropdown-desc">Weekly syncs, collaborative agendas & pulse questions</div>
+                </div>
+              </a>
+              <a href="#demo-console" class="dropdown-item">
+                <div class="dropdown-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <div class="dropdown-title">Performance Reviews</div>
+                  <div class="dropdown-desc">360° Best-Self Reviews® & 9-box calibration</div>
+                </div>
+              </a>
+              <a href="#engagement" class="dropdown-item">
+                <div class="dropdown-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </div>
+                <div>
+                  <div class="dropdown-title">Engagement & Pulse</div>
+                  <div class="dropdown-desc">Science-backed surveys and retention risk analytics</div>
+                </div>
+              </a>
+              <a href="#coaching" class="dropdown-item">
+                <div class="dropdown-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div>
+                  <div class="dropdown-title">Manager Coaching</div>
+                  <div class="dropdown-desc">15Five Transform on-demand leadership training</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#engagement" class="nav-link">Engagement</a>
+          </li>
+          <li class="nav-item">
+            <a href="#coaching" class="nav-link">Coaching & Training</a>
+          </li>
+          <li class="nav-item">
+            <a href="#calculator" class="nav-link">ROI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Stories</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="#demo-console" class="login-link">Log In</a>
+        <button class="btn btn-primary btn-sm open-demo-btn">Book a Demo</button>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-links">
+      <li><a href="#demo-console">Platform & Product</a></li>
+      <li class="mobile-sublinks">
+        <a href="#demo-console">→ Continuous 1-on-1s</a>
+        <a href="#demo-console">→ Best-Self Reviews®</a>
+        <a href="#demo-console">→ OKRs & Goal Tracking</a>
+        <a href="#demo-console">→ High Fives Recognition</a>
+      </li>
+      <li><a href="#engagement">Engagement Insights</a></li>
+      <li><a href="#coaching">Manager Coaching</a></li>
+      <li><a href="#calculator">ROI Calculator</a></li>
+      <li><a href="#testimonials">Customer Stories</a></li>
+    </ul>
+    <div class="mobile-cta-group">
+      <button class="btn btn-primary btn-lg open-demo-btn" style="width: 100%;">Book a Demo</button>
+      <a href="#demo-console" class="btn btn-ghost" style="width: 100%;">Log In</a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION: Sunrise over a clean desk -->
+  <section class="hero-section">
+    <!-- Decorative subtle atmospheric line art -->
+    <div class="hero-deco-line deco-circle-1"></div>
+    <div class="hero-deco-line deco-circle-2"></div>
+
+    <div class="container hero-content">
+      <span class="eyebrow eyebrow-center">STRATEGIC HR PLATFORM</span>
+      <h1 class="headline-serif hero-headline">
+        Human-Centered Performance That Drives Business Results
+      </h1>
+      <p class="hero-subhead">
+        Equip managers, empower high-performing teams, and align company goals. 15Five combines continuous performance management, scientifically validated engagement surveys, and leadership coaching into one intuitive platform.
+      </p>
+
+      <!-- Paired Pill CTAs (68px radius) -->
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-lg open-demo-btn">Book a Demo</button>
+        <a href="#demo-console" class="btn btn-ghost btn-lg">Explore Interactive Tour</a>
+      </div>
+
+      <!-- Trust Micro-Copy -->
+      <div class="hero-trust-bar">
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          No credit card required
+        </span>
+        <span class="trust-dot"></span>
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Trusted by 3,400+ progressive companies
+        </span>
+        <span class="trust-dot"></span>
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          #1 Performance Management on G2
+        </span>
+      </div>
+
+      <!-- Hero Visual Showcase with Browser Frame and Assets -->
+      <div class="hero-preview-wrapper">
+        <div class="hero-browser-frame">
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="browser-searchbar">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span>app.15five.com/dashboard/organization-pulse</span>
+            </div>
+            <div class="browser-tabs">
+              <button class="preview-tab-pill active">Executive Pulse</button>
+              <button class="preview-tab-pill">1-on-1s</button>
+            </div>
+          </div>
+
+          <div class="hero-screenshot-container">
+            <img src="./assets/hero-screenshot.jpg" alt="15Five Product Dashboard Preview showing engagement metrics and performance insights" class="hero-image">
+            
+            <!-- Floating interactive metric chips -->
+            <div class="hero-floating-chip chip-top-left">
+              <div class="chip-icon">🎯</div>
+              <div>
+                <div class="chip-title">OKRs On Track: 94%</div>
+                <div class="chip-sub">Quarterly team alignment healthy</div>
+              </div>
+            </div>
+
+            <div class="hero-floating-chip chip-bottom-right">
+              <div class="chip-icon">✨</div>
+              <div>
+                <div class="chip-title">Weekly Check-in Complete</div>
+                <div class="chip-sub">12 direct reports synced this morning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS SECTION: Hero Stat Cards -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <!-- Stat 1 -->
+        <div class="stat-card">
+          <div class="stat-label">EMPLOYEE ENGAGEMENT</div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="84">0</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <p class="stat-footnote">Average lift in team engagement across 12-month cohorts</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-card">
+          <div class="stat-label">RETENTION MULTIPLIER</div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-suffix">x</span>
+          </div>
+          <p class="stat-footnote">Higher employee retention rate compared to tech industry average</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-card">
+          <div class="stat-label">LEADERSHIP CONFIDENCE</div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="93">0</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <p class="stat-footnote">Managers report feeling fully equipped to guide and coach direct reports</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="stat-card">
+          <div class="stat-label">LIGHTWEIGHT ROUTINE</div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-suffix">min</span>
+          </div>
+          <p class="stat-footnote">Average time needed weekly for impactful asynchronous check-ins</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER PROOF LOGOS -->
+  <section class="logos-section">
+    <div class="container">
+      <span class="eyebrow eyebrow-center">YOU'RE IN GOOD COMPANY</span>
+      <p class="section-subhead">Powering high-performing organizations from hyper-growth scaleups to global enterprises.</p>
+      
+      <div class="logos-grid">
+        <div class="logo-item" title="Spotify">
+          <svg class="logo-svg" viewBox="0 0 167.5 167.5" width="24" height="24">
+            <path d="M83.75 0C37.5 0 0 37.5 0 83.75s37.5 83.75 83.75 83.75 83.75-37.5 83.75-83.75S130 0 83.75 0zm38.4 120.8c-1.5 2.5-4.7 3.3-7.2 1.8-19.8-12.1-44.7-14.8-74.1-8.1-2.9.7-5.7-1.1-6.4-4-.7-2.9 1.1-5.7 4-6.4 32.2-7.3 59.8-4.3 81.9 9.3 2.5 1.5 3.3 4.7 1.8 7.4zm10.3-22.9c-1.9 3.1-6 4-9.1 2.2-22.7-13.9-57.2-18-84-9.8-3.5 1.1-7.2-.9-8.3-4.4-1.1-3.5.9-7.2 4.4-8.3 30.6-9.3 68.8-4.8 94.8 11.2 3.1 1.9 4.1 6 2.2 9.1zm.9-23.9C106 57.6 61.2 56.1 35.6 63.9c-4.2 1.3-8.6-1.2-9.8-5.3-1.3-4.2 1.2-8.6 5.3-9.8 29.5-9 78.9-7.3 109.8 11.1 3.8 2.3 5 7.3 2.8 11.1-2.3 3.8-7.3 5-11.1 2.8l.5.2z"/>
+          </svg>
+          <span>Spotify</span>
+        </div>
+        
+        <div class="logo-item" title="HubSpot">
+          <svg class="logo-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v6m0 8v6M2 12h6m8 0h6"/>
+          </svg>
+          <span>HubSpot</span>
+        </div>
+
+        <div class="logo-item" title="Pendo">
+          <svg class="logo-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <span>pendo</span>
+        </div>
+
+        <div class="logo-item" title="Siemens">
+          <span style="font-size: 21px; font-weight: 800; letter-spacing: 0.12em;">SIEMENS</span>
+        </div>
+
+        <div class="logo-item" title="Credit Karma">
+          <svg class="logo-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="2" y="5" width="20" height="14" rx="3"/>
+            <line x1="2" y1="10" x2="22" y2="10"/>
+          </svg>
+          <span>Credit Karma</span>
+        </div>
+
+        <div class="logo-item" title="Wistia">
+          <svg class="logo-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          <span>WISTIA</span>
+        </div>
+
+        <div class="logo-item" title="Northwestern Mutual">
+          <span style="font-size: 17px; font-weight: 700; letter-spacing: 0.05em;">Northwestern Mutual</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE DEMO CONSOLE -->
+  <section id="demo-console" class="demo-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow eyebrow-center">CONTINUOUS PERFORMANCE ECOSYSTEM</span>
+        <h2 class="headline-serif section-title center">
+          Everything Managers & Teams Need to Grow Every Week
+        </h2>
+        <p class="section-subhead">
+          Say goodbye to stressful once-a-year appraisals. Replace awkward reviews with continuous alignment, actionable pulse data, and transparent goal tracking.
+        </p>
+      </div>
+
+      <div class="console-container">
+        <!-- Console Tab Navigation -->
+        <div class="console-nav-tabs" role="tablist">
+          <button class="console-tab-btn active" data-tab="tab-checkin" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            1-on-1s & Check-ins
+          </button>
+          <button class="console-tab-btn" data-tab="tab-okrs" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            Objectives & OKRs
+          </button>
+          <button class="console-tab-btn" data-tab="tab-reviews" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Best-Self Reviews®
+          </button>
+          <button class="console-tab-btn" data-tab="tab-highfives" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            High Fives & Recognition
+          </button>
+        </div>
+
+        <!-- TAB 1: 1-on-1s & Check-ins -->
+        <div id="tab-checkin" class="console-pane active" role="tabpanel">
+          <div class="console-split">
+            <div class="console-sidebar">
+              <div class="side-info-card">
+                <span class="badge-lavender" style="margin-bottom: 12px;">Weekly Routine</span>
+                <h4>Continuous Syncs</h4>
+                <p>Employees spend 15 minutes answering lightweight pulse questions. Managers review responses in 5 minutes to hold high-impact 1-on-1 conversations.</p>
+                <div style="font-size: 13px; font-weight: 600; color: var(--color-midnight-plum);">
+                  Sync Frequency: <span style="color: var(--color-iris);">Every Thursday, 10:00 AM</span>
+                </div>
+              </div>
+
+              <div class="card-clean">
+                <div style="font-size: 13px; font-weight: 700; color: var(--color-slate-mute); text-transform: uppercase; margin-bottom: 10px;">Manager Private Note</div>
+                <p style="font-size: 13px; line-height: 20px; color: #433e56;">
+                  "Sarah has demonstrated exceptional leadership in the Q3 platform redesign. Explore her readiness for the Principal track."
+                </p>
+              </div>
+            </div>
+
+            <div class="console-main-canvas">
+              <div class="checkin-row">
+                <div class="checkin-header">
+                  <div class="user-meta">
+                    <div class="avatar">SM</div>
+                    <div>
+                      <div class="user-name">Sarah Miller</div>
+                      <div class="user-role">Senior Product Designer • Weekly Check-in</div>
+                    </div>
+                  </div>
+                  <div>
+                    <span style="font-size: 12px; color: var(--color-slate-mute); margin-right: 8px;">Pulse Sentiment:</span>
+                    <span class="sentiment-rating">
+                      <button class="sentiment-btn" title="Challenging">😔</button>
+                      <button class="sentiment-btn" title="Neutral">😐</button>
+                      <button class="sentiment-btn" title="Good">🙂</button>
+                      <button class="sentiment-btn active" title="Energized & Great">🚀</button>
+                    </span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px;">
+                  <div class="question-text">1. What were your biggest wins this week?</div>
+                  <div class="answer-text">
+                    "Completed usability testing for the enterprise billing checkout flow with 14 customer participants. Overall satisfaction rating was 4.9/5!"
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px;">
+                  <div class="question-text">2. Where are you feeling stuck or blocked?</div>
+                  <div class="answer-text">
+                    "Awaiting API contracts from backend platform engineering before finalizing the live state prototype."
+                  </div>
+                </div>
+
+                <!-- Collaborative Agenda / Action Items -->
+                <div style="margin-top: 18px; border-top: 1px solid var(--color-border-hairline); padding-top: 14px;">
+                  <div style="font-size: 13px; font-weight: 700; color: var(--color-midnight-plum); margin-bottom: 8px;">
+                    Shared 1-on-1 Agenda (Interactive)
+                  </div>
+                  <div class="todo-list">
+                    <div class="todo-item completed">
+                      <div class="todo-checkbox">✓</div>
+                      <span>Review user testing recording highlights</span>
+                    </div>
+                    <div class="todo-item">
+                      <div class="todo-checkbox"></div>
+                      <span>Connect with Backend Lead to unblock billing API contracts</span>
+                    </div>
+                    <div class="todo-item">
+                      <div class="todo-checkbox"></div>
+                      <span>Discuss career development plan and conference stipend</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: Objectives & OKRs -->
+        <div id="tab-okrs" class="console-pane" role="tabpanel">
+          <div class="console-split">
+            <div class="console-sidebar">
+              <div class="side-info-card">
+                <span class="badge-lavender" style="margin-bottom: 12px;">Strategic Alignment</span>
+                <h4>Cascading OKRs</h4>
+                <p>Connect frontline everyday tasks to high-level company milestones. Transparent progress keeps cross-functional teams moving in sync.</p>
+                <div style="font-size: 13px; font-weight: 600; color: var(--color-midnight-plum);">
+                  Quarterly Status: <span style="color: #127938;">88% Healthy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="console-main-canvas">
+              <!-- OKR 1 -->
+              <div class="okr-card">
+                <div class="okr-top">
+                  <div>
+                    <span class="badge-tag" style="background:#eee9f6; color:var(--color-royal-violet); margin-bottom: 6px;">Company Strategic Objective</span>
+                    <div class="okr-title">Accelerate Enterprise Expansion and Product Adoption</div>
+                  </div>
+                  <span class="okr-status-badge status-on-track">On Track</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 84%;"></div>
+                </div>
+                <div class="okr-meta">
+                  <span>Owner: Executive Leadership Team</span>
+                  <strong>84% Completed</strong>
+                </div>
+              </div>
+
+              <!-- OKR 2 -->
+              <div class="okr-card">
+                <div class="okr-top">
+                  <div>
+                    <span class="badge-tag" style="background:#e3f9e9; color:#127938; margin-bottom: 6px;">Department Key Result</span>
+                    <div class="okr-title">Achieve Net Revenue Retention (NRR) of 122%</div>
+                  </div>
+                  <span class="okr-status-badge status-on-track">On Track</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 91%; background: #127938;"></div>
+                </div>
+                <div class="okr-meta">
+                  <span>Owner: Customer Success & Product</span>
+                  <strong>91% Completed</strong>
+                </div>
+              </div>
+
+              <!-- OKR 3 -->
+              <div class="okr-card">
+                <div class="okr-top">
+                  <div>
+                    <span class="badge-tag" style="background:#fff4e5; color:#b25e02; margin-bottom: 6px;">Team Key Result</span>
+                    <div class="okr-title">Conduct weekly 1-on-1 check-ins across 100% of engineering squads</div>
+                  </div>
+                  <span class="okr-status-badge status-behind">Needs Focus</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 68%; background: #e07a14;"></div>
+                </div>
+                <div class="okr-meta">
+                  <span>Owner: Engineering Directors</span>
+                  <strong>68% Completed</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: Best-Self Reviews -->
+        <div id="tab-reviews" class="console-pane" role="tabpanel">
+          <div class="console-split">
+            <div class="console-sidebar">
+              <div class="side-info-card">
+                <span class="badge-lavender" style="margin-bottom: 12px;">Evidence-Based</span>
+                <h4>Best-Self Reviews®</h4>
+                <p>Eliminate cognitive bias with forward-looking questions designed by neuroscientists and organizational psychologists. Focus on strengths and future potential.</p>
+                <div style="font-size: 13px; font-weight: 600; color: var(--color-midnight-plum);">
+                  Review Cycle: <span style="color: var(--color-royal-violet);">H2 Growth Reflection</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="console-main-canvas">
+              <div class="card-clean" style="margin-bottom: 20px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 14px;">
+                  <h4 style="font-size: 16px; font-weight:700;">Performance & Potential Calibration (9-Box Grid)</h4>
+                  <span class="badge-lavender">Calibrated</span>
+                </div>
+                <p style="font-size: 13px; color: var(--color-slate-mute); margin-bottom: 16px;">
+                  Data-backed talent matrix helps HR and leaders conduct equitable compensation and promotion reviews without recency bias.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; font-size: 12px; font-weight: 600;">
+                  <div style="background:#fff0eb; border:1px solid #ffdacf; padding:14px 8px; border-radius:8px;">
+                    <div style="color:var(--color-ember-orange);">High Potential</div>
+                    <div style="font-size: 10.5px; color:var(--color-slate-mute);">Future Leader (4)</div>
+                  </div>
+                  <div style="background:#e9f8ee; border:1px solid #bce9ca; padding:14px 8px; border-radius:8px;">
+                    <div style="color:#127938;">Star Performer</div>
+                    <div style="font-size: 10.5px; color:var(--color-slate-mute);">Top Tier Growth (8)</div>
+                  </div>
+                  <div style="background:#ede9f7; border:1px solid #d2c6ed; padding:14px 8px; border-radius:8px;">
+                    <div style="color:var(--color-royal-violet);">Key Contributor</div>
+                    <div style="font-size: 10.5px; color:var(--color-slate-mute);">Core Driver (14)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question Sample -->
+              <div class="checkin-row">
+                <div class="question-text">Manager Growth Question: "If this person were offered a job elsewhere, how hard would you fight to keep them?"</div>
+                <div class="answer-text" style="border-left-color: var(--color-ember-orange);">
+                  "I would fight exceptionally hard. Sarah is a multiplier who lifts the strategic clarity of the entire design and front-end team."
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: High Fives Recognition -->
+        <div id="tab-highfives" class="console-pane" role="tabpanel">
+          <div class="console-split">
+            <div class="console-sidebar">
+              <div class="side-info-card">
+                <span class="badge-lavender" style="margin-bottom: 12px;">Social Recognition</span>
+                <h4>High Fives</h4>
+                <p>Public micro-recognition tied directly to company core values. Builds psychological safety, strengthens peer bonds, and keeps distributed teams connected.</p>
+                <div style="font-size: 13px; font-weight: 600; color: var(--color-midnight-plum);">
+                  High Fives Given This Month: <span style="color: var(--color-ember-orange); font-size: 16px;">1,420 🙌</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="console-main-canvas">
+              <div id="highFivesList" class="high-fives-feed">
+                <!-- Feed Card 1 -->
+                <div class="high-five-card">
+                  <div class="high-five-icon">🙌</div>
+                  <div class="high-five-body">
+                    <div class="high-five-header">
+                      <strong>Marcus Chen (VP Eng)</strong> gave a High Five to <strong>Jessica Rivera</strong>
+                    </div>
+                    <p class="high-five-message">
+                      "Huge shoutout for leading the SOC2 security audit to completion two weeks ahead of schedule. Your thorough documentation made compliance a breeze!"
+                    </p>
+                    <div class="high-five-tags">
+                      <span class="high-five-tag">#excellence</span>
+                      <span class="high-five-tag">#ownership</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Feed Card 2 -->
+                <div class="high-five-card">
+                  <div class="high-five-icon">🔥</div>
+                  <div class="high-five-body">
+                    <div class="high-five-header">
+                      <strong>David Thorne</strong> gave a High Five to <strong>Elena Rostova</strong>
+                    </div>
+                    <p class="high-five-message">
+                      "Thank you for stepping in to onboard our four new frontend apprentices. Your mentorship empathy is unmatched!"
+                    </p>
+                    <div class="high-five-tags">
+                      <span class="high-five-tag">#culture-champion</span>
+                      <span class="high-five-tag">#mentorship</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Form to add a High Five -->
+              <form id="highFiveForm" class="high-five-form">
+                <input type="text" id="highFiveInput" class="high-five-input" placeholder="Give a High Five to a colleague..." required>
+                <button type="submit" class="btn btn-primary btn-sm">Send High Five 🙌</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYEE ENGAGEMENT & HR ANALYTICS -->
+  <section id="engagement" class="engagement-section">
+    <div class="container">
+      <div class="engagement-grid">
+        <div>
+          <span class="eyebrow">ENGAGEMENT & PULSE INSIGHTS</span>
+          <h2 class="headline-serif section-title text-left">
+            Turn People Data into Decisive, Compassionate Action
+          </h2>
+          <p class="section-subhead text-left" style="margin-bottom: 24px;">
+            Co-designed with researchers from UC Berkeley and Harvard, 15Five’s science-backed survey engine uncovers real drivers of employee satisfaction and detects turnover risks months before employees resign.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px;">
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+              <span style="color: var(--color-royal-violet); font-weight: 700;">✓</span>
+              <span><strong>Pre-built research templates:</strong> DEIB, Psychological Safety, Remote Team Health & Manager Efficacy.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+              <span style="color: var(--color-royal-violet); font-weight: 700;">✓</span>
+              <span><strong>Predictive Turnover Analytics:</strong> Pinpoint exact departments with attrition risk before it occurs.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+              <span style="color: var(--color-royal-violet); font-weight: 700;">✓</span>
+              <span><strong>Automated Action Plans:</strong> Recommended micro-habits generated instantly for every team lead.</span>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary open-demo-btn">See Live Engagement Demo</button>
+        </div>
+
+        <!-- Heatmap Preview Card -->
+        <div class="heatmap-card">
+          <div class="heatmap-header">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: var(--color-slate-mute); text-transform: uppercase;">Company Engagement Index</div>
+              <div style="font-size: 32px; font-family: var(--font-manrope); font-weight: 800; color: var(--color-royal-violet);">
+                87 <span style="font-size: 18px; font-weight: 400; color: var(--color-slate-mute);">/ 100</span>
+              </div>
+            </div>
+            <div class="enps-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              eNPS +54 (Top Quartile)
+            </div>
+          </div>
+
+          <div class="driver-bars">
+            <div class="driver-row">
+              <div class="driver-label-row">
+                <span>Psychological Safety</span>
+                <span>92%</span>
+              </div>
+              <div class="driver-meter">
+                <div class="driver-fill violet" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="driver-row">
+              <div class="driver-label-row">
+                <span>Role Clarity & Autonomy</span>
+                <span>88%</span>
+              </div>
+              <div class="driver-meter">
+                <div class="driver-fill teal" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="driver-row">
+              <div class="driver-label-row">
+                <span>Feedback & Coaching Frequency</span>
+                <span>84%</span>
+              </div>
+              <div class="driver-meter">
+                <div class="driver-fill amber" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div class="driver-row">
+              <div class="driver-label-row">
+                <span>Career Growth Opportunities</span>
+                <span>79%</span>
+              </div>
+              <div class="driver-meter">
+                <div class="driver-fill coral" style="width: 79%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Plan Pill Badge System -->
+          <div class="action-plan-box">
+            <div class="action-plan-content">
+              <div class="action-plan-icon">✨</div>
+              <div>
+                <div class="action-plan-title">Targeted Growth Opportunity Detected</div>
+                <div class="action-plan-sub">Career pathing score dropped 3% in Product Squad B</div>
+              </div>
+            </div>
+            <button id="btnActionPlan" class="badge-lavender" style="cursor: pointer; border: none; padding: 10px 16px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Draft Action Plan
+            </button>
+          </div>
+
+          <!-- Revealed Action Plan Drawer -->
+          <div id="actionPlanDetails" style="display: none; margin-top: 16px; background: #ffffff; border-radius: 10px; padding: 16px; border: 1px solid var(--color-border-hairline);">
+            <div style="font-size: 13px; font-weight: 700; color: var(--color-royal-violet); margin-bottom: 8px;">Recommended HR Micro-Actions:</div>
+            <ul style="font-size: 13px; color: #433e56; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+              <li>Prompt squad managers to schedule dedicated 30-min career growth chats next sprint.</li>
+              <li>Provide transparency on upcoming departmental competency matrices.</li>
+              <li>Track progress during subsequent weekly 15Five check-ins.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANAGER COACHING & LEADERSHIP ENABLEMENT ("15Five Transform") -->
+  <section id="coaching" class="coaching-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow eyebrow-center">MANAGER ENABLEMENT</span>
+        <h2 class="headline-serif section-title center">
+          Transform Managers into Exceptional Leaders
+        </h2>
+        <p class="section-subhead">
+          70% of team engagement variance is directly tied to the manager. 15Five Transform provides in-flow micro-learning, personalized coaching, and science-backed conversation frameworks.
+        </p>
+      </div>
+
+      <div class="coaching-grid">
+        <div>
+          <div class="card-clean" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="badge-lavender" style="width: fit-content; margin-bottom: 16px;">15Five Transform™</div>
+            <h3 style="font-size: 24px; font-family: var(--font-dm-serif-display); color: var(--color-midnight-plum); margin-bottom: 12px;">
+              World-Class Coaching Embedded in Daily Workflow
+            </h3>
+            <p style="font-size: 15px; line-height: 24px; color: var(--color-slate-mute); margin-bottom: 20px;">
+              Traditional leadership training is forgotten within 48 hours. 15Five weaves behavioral science directly into check-ins, reviews, and 1-on-1s where it actually changes habits.
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 10px;">
+              <div style="background: var(--color-cream-wash); padding: 14px; border-radius: 10px;">
+                <div style="font-size: 24px; font-weight: 700; color: var(--color-royal-violet);">96%</div>
+                <div style="font-size: 12px; color: var(--color-slate-mute);">Managers apply learned habits in weekly 1-on-1s</div>
+              </div>
+              <div style="background: var(--color-cream-wash); padding: 14px; border-radius: 10px;">
+                <div style="font-size: 24px; font-weight: 700; color: var(--color-ember-orange);">4.8 / 5</div>
+                <div style="font-size: 12px; color: var(--color-slate-mute);">Manager coaching program satisfaction rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Coaching Widget Simulator -->
+        <div class="coaching-widget">
+          <div style="font-size: 13px; font-weight: 700; color: var(--color-slate-mute); text-transform: uppercase; margin-bottom: 12px;">
+            Interactive Coaching Prompt Generator:
+          </div>
+
+          <div class="coach-selector">
+            <button class="coach-chip active" data-scenario="burnout">Navigating Burnout</button>
+            <button class="coach-chip" data-scenario="feedback">Constructive Feedback</button>
+            <button class="coach-chip" data-scenario="growth">Career Development</button>
+            <button class="coach-chip" data-scenario="newmgr">First-Time Manager</button>
+          </div>
+
+          <div class="coach-output">
+            <h5 id="coachTitle">Science-Backed Talking Points: Navigating Capacity & Overwhelm</h5>
+            <ul id="coachList">
+              <li>"I’ve noticed how hard you’ve been pushing lately. On a scale of 1–10, how sustainable does your workload feel right now?"</li>
+              <li>Review current commitments together: Identify 1 task to delegate, 1 to deprioritize, and 1 to postpone.</li>
+              <li>Agree on clear asynchronous boundaries: "No Slack responses expected after 6:00 PM."</li>
+              <li>Schedule a follow-up pulse check in 7 days to evaluate relief.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL CAROUSEL (Design.md specification) -->
+  <section id="testimonials" class="testimonial-section">
+    <div class="container">
+      <div class="testimonial-card-wrapper">
+        <!-- Atmospheric decorative geometry -->
+        <svg class="testimonial-deco-art" width="220" height="220" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#ff4b11" stroke-width="1.5" stroke-dasharray="6,6"/>
+          <circle cx="100" cy="100" r="60" fill="none" stroke="#ffdacf" stroke-width="1.5"/>
+        </svg>
+
+        <div class="testimonial-slider">
+          <!-- Slide 1: Pendo -->
+          <div class="testimonial-slide active">
+            <!-- Five Ember Orange Stars -->
+            <div class="star-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+
+            <p class="testimonial-quote">
+              "15Five completely shifted our culture from reactive firefighting to proactive coaching. Our managers now lead with empathy and clarity, and our voluntary turnover dropped by 42% in just twelve months."
+            </p>
+
+            <div class="testimonial-author-block">
+              <div class="avatar" style="width: 52px; height: 52px; font-size: 18px; background: #ffffff;">KH</div>
+              <div>
+                <div class="author-name">Kendra Havens</div>
+                <div class="author-title">VP of People & Culture • Pendo</div>
+              </div>
+            </div>
+
+            <button class="btn btn-soft open-demo-btn">Read full customer story</button>
+          </div>
+
+          <!-- Slide 2: Spotify Lead -->
+          <div class="testimonial-slide">
+            <div class="star-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+
+            <p class="testimonial-quote">
+              "The Best-Self Review process took the dread out of performance reviews. For the first time, our engineering squads walk away energized with concrete quarterly growth goals."
+            </p>
+
+            <div class="testimonial-author-block">
+              <div class="avatar" style="width: 52px; height: 52px; font-size: 18px; background: #ffffff;">JL</div>
+              <div>
+                <div class="author-name">Jonah Lindberg</div>
+                <div class="author-title">Director of Engineering • Spotify Squads</div>
+              </div>
+            </div>
+
+            <button class="btn btn-soft open-demo-btn">Read full customer story</button>
+          </div>
+
+          <!-- Slide 3: Wistia -->
+          <div class="testimonial-slide">
+            <div class="star-rating">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+
+            <p class="testimonial-quote">
+              "Continuous 1-on-1s and High Fives keep our distributed team tightly knit. We have full visibility into company-wide sentiment without creating cumbersome administrative overhead."
+            </p>
+
+            <div class="testimonial-author-block">
+              <div class="avatar" style="width: 52px; height: 52px; font-size: 18px; background: #ffffff;">AM</div>
+              <div>
+                <div class="author-name">Alicia Montgomery</div>
+                <div class="author-title">Chief Operating Officer • Wistia</div>
+              </div>
+            </div>
+
+            <button class="btn btn-soft open-demo-btn">Read full customer story</button>
+          </div>
+        </div>
+
+        <!-- Slider Pagination & Navigation Controls -->
+        <div class="testimonial-actions-row">
+          <!-- 8px circles: active = Royal Violet, inactive = Peach Blush outline -->
+          <div class="testimonial-dots">
+            <button class="dot-btn active" aria-label="Go to testimonial 1"></button>
+            <button class="dot-btn" aria-label="Go to testimonial 2"></button>
+            <button class="dot-btn" aria-label="Go to testimonial 3"></button>
+          </div>
+
+          <div class="slider-nav-arrows">
+            <button id="prevTestimonial" class="arrow-btn" aria-label="Previous testimonial">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button id="nextTestimonial" class="arrow-btn" aria-label="Next testimonial">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI BUSINESS IMPACT CALCULATOR -->
+  <section id="calculator" class="calculator-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow eyebrow-center">BUSINESS IMPACT CALCULATOR</span>
+        <h2 class="headline-serif section-title center">
+          Calculate the ROI of High-Performing Teams
+        </h2>
+        <p class="section-subhead">
+          See how reducing avoidable voluntary churn and automating weekly performance cadences produces measurable financial ROI for your organization.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Sliders -->
+        <div class="calc-inputs">
+          <div class="range-group">
+            <div class="range-header">
+              <span>Total Number of Employees</span>
+              <span id="headcountVal" class="range-value">250</span>
+            </div>
+            <input type="range" id="calcHeadcount" min="20" max="3000" step="10" value="250">
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-slate-mute);">
+              <span>20</span>
+              <span>1,500</span>
+              <span>3,000+</span>
+            </div>
+          </div>
+
+          <div class="range-group">
+            <div class="range-header">
+              <span>Average Annual Salary</span>
+              <span id="salaryVal" class="range-value">$95,000</span>
+            </div>
+            <input type="range" id="calcSalary" min="45000" max="220000" step="5000" value="95000">
+            <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--color-slate-mute);">
+              <span>$45,000</span>
+              <span>$130,000</span>
+              <span>$220,000</span>
+            </div>
+          </div>
+
+          <div style="background:#faf9fd; padding:16px; border-radius:10px; border:1px solid var(--color-border-hairline); font-size:13px; color:var(--color-slate-mute); line-height:20px;">
+            💡 <em>Calculation methodology based on Gallup & Bersin HR benchmarks: 25% lower voluntary attrition + 42 hours saved per manager/year through automated review workflows.</em>
+          </div>
+        </div>
+
+        <!-- Calculated Results -->
+        <div class="calc-results">
+          <div>
+            <div class="roi-metric-item">
+              <div class="roi-metric-label">Estimated Turnover Savings</div>
+              <div id="roiTurnoverSavings" class="roi-metric-value">$427,500/yr</div>
+            </div>
+
+            <div class="roi-metric-item">
+              <div class="roi-metric-label">Manager Hours Saved</div>
+              <div id="roiHoursSaved" class="roi-metric-value">1,512 hrs/yr</div>
+            </div>
+
+            <div class="roi-metric-item" style="margin-bottom: 0;">
+              <div class="roi-metric-label">Estimated 3-Year Total Business Value</div>
+              <div id="roiTotalValue" class="roi-metric-value" style="font-size: 38px; color: var(--color-iris);">$1,577,340</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <button class="btn btn-primary btn-lg open-demo-btn" style="width: 100%;">
+              Get Custom ROI Business Case
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="headline-serif cta-banner-headline">
+          Ready to Spark High Performance and Human Growth?
+        </h2>
+        <p class="cta-banner-sub">
+          Join 3,400+ forward-thinking organizations using 15Five to bring out the very best in their people every single week.
+        </p>
+        <div class="cta-banner-buttons">
+          <button class="btn btn-white btn-lg open-demo-btn">Book a 15-Minute Demo</button>
+          <a href="#demo-console" class="btn btn-outline-white btn-lg">Explore Interactive Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" aria-label="15Five Home">
+            <svg class="brand-burst" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+              <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+            </svg>
+            <span>15five</span>
+          </a>
+          <p>
+            15Five is the holistic performance management platform that creates high-performing teams by equipping managers, engaging employees, and aligning company goals.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <ul>
+            <li><a href="#demo-console">Continuous 1-on-1s</a></li>
+            <li><a href="#demo-console">Best-Self Reviews®</a></li>
+            <li><a href="#engagement">Engagement Surveys</a></li>
+            <li><a href="#demo-console">OKRs & Goal Tracking</a></li>
+            <li><a href="#demo-console">High Fives Recognition</a></li>
+            <li><a href="#coaching">15Five Transform Coaching</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#engagement">For HR Executives</a></li>
+            <li><a href="#coaching">For People Managers</a></li>
+            <li><a href="#calculator">Enterprise Organizations</a></li>
+            <li><a href="#calculator">Growth Scaleups</a></li>
+            <li><a href="#testimonials">Customer Case Studies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources & Company</h5>
+          <ul>
+            <li><a href="#calculator">ROI Calculator</a></li>
+            <li><a href="#testimonials">HR Benchmark Report</a></li>
+            <li><a href="#">Best-Self Management Book</a></li>
+            <li><a href="#">HR Superstars Podcast</a></li>
+            <li><a href="#">Careers (We're Hiring!)</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 15Five, Inc. All rights reserved. • "Sunrise over a clean desk" design system.
+        </div>
+
+        <div class="footer-security-badges">
+          <span class="security-pill">SOC2 TYPE II CERTIFIED</span>
+          <span class="security-pill">GDPR COMPLIANT</span>
+          <span class="security-pill">HIPAA READY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DEMO BOOKING MODAL & DRAWER -->
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+  <aside id="demoDrawer" class="drawer-panel" aria-label="Book a Demo Drawer">
+    <div class="drawer-header">
+      <h3>Book Your 15Five Demo</h3>
+      <button class="close-btn close-demo-btn" aria-label="Close demo booking drawer">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Demo Booking Form -->
+      <form id="demoBookingForm">
+        <p style="font-size: 14px; color: var(--color-slate-mute); margin-bottom: 24px; line-height: 22px;">
+          See how 15Five empowers managers, elevates engagement, and connects team goals in a personalized 20-minute consultation.
+        </p>
+
+        <div class="form-group">
+          <label for="demoName">Full Name *</label>
+          <input type="text" id="demoName" class="form-input" placeholder="e.g. Jessica Taylor" required>
+        </div>
+
+        <div class="form-group">
+          <label for="demoEmail">Work Email *</label>
+          <input type="email" id="demoEmail" class="form-input" placeholder="jessica@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="demoCompany">Company Name *</label>
+          <input type="text" id="demoCompany" class="form-input" placeholder="Acme Technologies" required>
+        </div>
+
+        <div class="form-group">
+          <label for="demoSize">Company Size (Employees)</label>
+          <select id="demoSize" class="form-select">
+            <option value="20-99">20 - 99 employees</option>
+            <option value="100-499" selected>100 - 499 employees</option>
+            <option value="500-1999">500 - 1,999 employees</option>
+            <option value="2000+">2,000+ employees</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="demoFocus">Primary HR Priority</label>
+          <select id="demoFocus" class="form-select">
+            <option value="Performance Reviews">Modernizing Performance Reviews</option>
+            <option value="1-on-1s & Check-ins">Continuous 1-on-1s & Check-ins</option>
+            <option value="Employee Engagement">Employee Engagement & Retention</option>
+            <option value="Manager Coaching">Manager Enablement & Coaching</option>
+            <option value="Full Suite">Full 15Five Strategic Platform</option>
+          </select>
+        </div>
+
+        <div style="margin-top: 30px;">
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Schedule My Product Tour →
+          </button>
+        </div>
+
+        <p style="font-size: 12px; color: var(--color-slate-mute); text-align: center; margin-top: 14px;">
+          🔒 We respect your privacy. No spam, ever.
+        </p>
+      </form>
+
+      <!-- Confirmation Screen -->
+      <div id="bookingConfirmView" class="booking-confirm-view">
+        <div class="booking-confirm-icon">🎉</div>
+        <h4 style="font-family: var(--font-dm-serif-display); font-size: 24px; color: var(--color-midnight-plum); margin-bottom: 12px;">
+          Demo Request Confirmed!
+        </h4>
+        <p style="font-size: 14px; line-height: 22px; color: var(--color-slate-mute); margin-bottom: 24px;">
+          Thank you, <span id="confirmClientName" style="font-weight: 700; color: var(--color-midnight-plum);">there</span>. A 15Five strategic solutions advisor will reach out within 1 business hour with tailored platform materials and calendar scheduling options.
+        </p>
+
+        <div style="background: var(--color-cream-wash); padding: 18px; border-radius: 12px; margin-bottom: 24px; text-align: left; font-size: 13px;">
+          <div style="font-weight: 700; color: var(--color-midnight-plum); margin-bottom: 6px;">Next steps in the meantime:</div>
+          <div style="color: var(--color-slate-mute);">1. Download the 2026 Strategic HR Benchmark Report</div>
+          <div style="color: var(--color-slate-mute);">2. Check your inbox for calendar invite confirmation</div>
+        </div>
+
+        <button class="btn btn-primary close-demo-btn" style="width: 100%;">Back to 15Five</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Toast Notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Interactive JavaScript -->
+  <script src="./app.js"></script>
+</body>
+</html>
